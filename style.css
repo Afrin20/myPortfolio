@@ -1,30 +1,20 @@
 
-
-.hero{
-
-    background-image: url(../portfolio/Images/header.jpg);
-}
-
-.img{
-    height: 100%;
-    width: 100%;
-  background-image: url(Images/portfolio.jpg);
-  background-size: cover;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
- 
+body{
+    background-color: #000;
 }
 nav{
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 5px;
     padding-left: 8%;
     padding-right: 8%;
+    background-color: #000;
 }
 .logo{
     color: white;
-    font-size: 35px;
+    font-size: 55px;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -32,6 +22,7 @@ span{
     color: #f9004d;
 }
 nav ul li{
+    font-size: 25px;
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
@@ -51,6 +42,7 @@ nav ul li a:hover{
     color: white;
     text-decoration: none;
 border: 2px solid transparent;
+font-size: 25px;
 font-weight: bold;
 padding: 10px 25px;
 border-radius: 30px;
@@ -59,11 +51,17 @@ transition: transform .4s;
 .btn:hover{
     transform: scale(1.2);
 }
+  
+  
 .content{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
+   
+       
+        top: 8px;
+        left: 16px;
+      
+      
+   
+  
 }
 h1{
     color: white;
@@ -78,44 +76,34 @@ margin-bottom: 50px;
 h4{
     color: #fcfc;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 35px;
 }
 .newsletter form{
+    margin-left: 40%;
 width: 380px;
-max-width: 100%;
-position: relative;
+
+
 }
+
 .newsletter form input:first-child{
-    display: inline-block;
+   text-align: center;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
+    border: 5px solid #f9004d;
     outline: none;
     border-radius: 30px;
 }
-.newsletter form input:last-child{
-    position: absolute;
-    display: inline-block;
-    padding: 10px 30px;
-    outline: none;
-    border: none;
-    border-radius: 30px;
-    background-color: #f9004d;
-    color:white;
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    top: 6px;
-    right: 6px;
-}
+
 .service{
     background: #101010;
-    width: 100%;
+   
    
 }
 .tittle h2{
     color:white ;
     font-size:75px ;
     width:1130px ;
-    margin: 30px auto;
+    background: #101010;
     text-align: center;
 }
 .box{
@@ -168,6 +156,44 @@ transition: transform .4s;
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+
+
+
+.top-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    
+}
+
+   .container{
+    background: #101010;
+    padding: 30px;
+    margin-top: 3px;
+   }
+
+.player img{
+    height: 200px;
+    width: 150px;
+    padding-bottom:55px;
+    border-radius: 10px;
+}
+.player img:hover{
+    transform: scale(1.2);
+}
+.player{
+    display: flex;
+    align-items: center;
+    
+}
+.number{
+    padding-left: 16px;
+}
+
 .contact-me{
     width:100% ;
 height:250px ;
@@ -179,7 +205,7 @@ justify-content: center;
 }
 .contact-me p{
 color:white ;
-font-size: 30px;
+font-size: 35px;
 font-weight: bold;
 margin-bottom: 25px;
 }
@@ -248,3 +274,50 @@ footer p:nth-child(2){
     bottom: 35px;
     font-size: 14px;
 }
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+nav{
+    width: 70%;
+    height: auto;
+    display: flex;
+    
+
+    padding-top: 5px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: #000;
+}
+
+    .img {
+        
+        max-width: 100%;
+        height: 115%;
+      }
+     
+.top-player{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    div.example {
+        font-size: 80px;
+      }
+    }
+ 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
